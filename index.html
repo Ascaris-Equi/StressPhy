@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MetS Tracker</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        h1 {
+            color: #2b648a; /* 海蓝色 */
+            margin-top: 50px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #goToPage2 {
+            background-color: #f1f3c4; /* 浅草绿色 */
+        }
+        #otherButton {
+            background-color: #cbdac2; /* 海蓝色 */
+        }
+        button {
+            color: #28663d;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        button:hover {
+            opacity: 0.8; /* 鼠标悬停时的透明度 */
+        }
+    </style>
+</head>
+<body>
+    <h1>MetS Tracker</h1>
+    <div class="button-container">
+        <button id="goToPage2">Start new detection</button>
+        <button id="otherButton">Check historical data</button>
+    </div>
+
+    <script>
+        document.getElementById("goToPage2").addEventListener("click", function() {
+            window.location.href = "page2.html";
+        });
+    </script>
+</body>
+</html>
+

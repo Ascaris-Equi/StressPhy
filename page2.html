@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MetS Tracker</title>
+    <style>
+        body, h1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #2b648a;
+        }
+        object, embed {
+            width: 400px;
+            height: 600px;
+            margin: 20px;
+            border: 1px solid black;
+        }
+        #summaryButton {
+            background-color: #f1f3c4; /* 参考浅草绿色 */
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>MetS Tracker</h1>
+    <object id="image" type="image/svg+xml" data="image1.svg"></object> <!-- 删除了不支持SVG的提示 -->
+    <button id="summaryButton" onclick="goToPage3()">Summary</button> <!-- 添加Summary按钮 -->
+    <script>
+        // SVG图片数组
+        const images = ["image1.svg", "image2.svg", "image3.svg", "image4.svg"];
+        let currentImageIndex = 0;
+
+        // 每隔10秒（10000毫秒）更换图片
+        setInterval(() => {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById("image").data = images[currentImageIndex];
+        }, 10000);
+
+        // 跳转到Page3页面
+        function goToPage3() {
+            window.location.href = "Page3.html";
+        }
+    </script>
+</body>
+</html>
+
+
