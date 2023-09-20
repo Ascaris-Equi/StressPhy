@@ -1,2 +1,2 @@
-# MetS
-MetS HKUST NYEIN LAB
+# MetS Tracker
+Developed by HKUST NYEIN LAB
