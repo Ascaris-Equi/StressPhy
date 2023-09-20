@@ -10,6 +10,7 @@
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             text-align: center;
+            position: relative;
         }
         h1 {
             color: #2b648a; /* 海蓝色 */
@@ -39,6 +40,17 @@
         button:hover {
             opacity: 0.8; /* 鼠标悬停时的透明度 */
         }
+        /* 新添加的底部标签样式 */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色 */
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -47,7 +59,10 @@
         <button id="goToPage2">Start new detection</button>
         <button id="otherButton">Check historical data</button>
     </div>
-
+    <!-- 新添加的底部标签 -->
+    <div class="footer">
+        Developed by HKUST NYEIN Lab
+    </div>
     <script>
         document.getElementById("goToPage2").addEventListener("click", function() {
             window.location.href = "page2.html";
@@ -55,4 +70,5 @@
     </script>
 </body>
 </html>
+
 
