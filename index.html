@@ -1,74 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>MetS Tracker</title>
-    <link rel="icon" href="MetS.jpg" type="image/jpeg">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            color: #2b648a;
-            margin-top: 50px;
-        }
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        #goToPage2 {
-            background-color: #f1f3c4;
-        }
-        #otherButton {
-            background-color: #cbdac2;
-        }
-        button {
-            color: #28663d;
-            border: none;
-            padding: 15px 32px;
-            text-align: center;
-            font-size: 16px;
-            margin: 10px;
-            cursor: pointer;
-            border-radius: 12px;
-        }
-        button:hover {
-            opacity: 0.8;
-        }
-        /* 更新后的底部标签样式 */
-        .footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 10px;
-            font-size: 14px;
-        }
-    </style>
+    <title>Nyein Group Health Monitor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>MetS Tracker</h1>
-    <div class="button-container">
-        <button id="goToPage2">Start new detection</button>
-        <button id="otherButton">Check historical data</button>
+    <div class="container">
+        <h1>Nyein Group Health Monitor</h1>
+        <div class="buttons">
+            <button onclick="window.location.href='monitor.html';">Start Monitoring</button>
+            <button onclick="window.location.href='history.html';">Historical Data</button>
+        </div>
+        <footer>
+            <p>Developed by HKUST NYEIN Group</p>
+        </footer>
     </div>
-    <!-- 更新后的底部标签 -->
-    <div class="footer">
-        Developed by HKUST NYEIN Lab
-    </div>
-    <script>
-        document.getElementById("goToPage2").addEventListener("click", function() {
-            window.location.href = "page2.html";
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
